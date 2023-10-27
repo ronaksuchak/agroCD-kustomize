@@ -3,4 +3,4 @@ kind: Deployment
 metadata:
   name: crate-webapp
 spec:
-  replicas: 3
+  replicas: 1
