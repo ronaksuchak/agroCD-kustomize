@@ -1,0 +1,12 @@
+
+
+configMapGenerator:
+- envs:
+  - config.properties
+  name: crate-config-map
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../base
+patches:
+- path: replicas.yaml
